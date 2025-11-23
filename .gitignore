@@ -53,6 +53,9 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 
+# User config
+*.user
+
 # Rider
 .idea/
 
