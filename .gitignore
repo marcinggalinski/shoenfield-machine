@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
