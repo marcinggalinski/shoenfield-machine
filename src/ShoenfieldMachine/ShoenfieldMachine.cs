@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using ShoenfieldMachine.Types;
+﻿using ShoenfieldMachine.Types;
 
 namespace ShoenfieldMachine;
 
@@ -44,7 +43,7 @@ public class ShoenfieldMachine : IShoenfieldMachine
         IsValid = false;
         
         var result = new List<Instruction>();
-        foreach (var line in Program.Split(["\n", "\r\n", "\r"], StringSplitOptions.None))
+        foreach (var line in Program.Split(["\n", "\r\n", "\r"], StringSplitOptions.None | StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries))
         {
             var instruction = ParseLine(line);
             if (instruction is null)
